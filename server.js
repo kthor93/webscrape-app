@@ -10,9 +10,9 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/webscrape-app";
+// const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/webscrape-app";
 
-mongoose.connect(MONGODB_URI);
+// mongoose.connect(MONGODB_URI);
 mongoose.connect("mongodb://localhost/webscrape-app", { useNewUrlParser: true });
 
 // Routes
